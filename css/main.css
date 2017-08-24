@@ -55,14 +55,15 @@ p,span,a,ul {
 	font-size: 22px;
 	color: #384259;
 }
-.top-line {
-	display: flex;
-	justify-content: space-between;
-	padding-bottom: 160px;
+.top-line,.normal{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 160px;
+    width: 100%;
 }
-#first .right {
-	display: flex;
-	align-items: baseline;
+.top-line .scroll {
+    display: flex;
+    justify-content: space-between;
 }
 .time {
 	font-size: 18px;
@@ -183,7 +184,7 @@ p,span,a,ul {
 	outline: none;
 }
 .gal-descr {
-	padding: 20px 30px;
+	padding: 20px 0;
 	width: 100%;
 	font-size: 18px;
 	line-height: 50px;
@@ -192,6 +193,9 @@ p,span,a,ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+.gal-descr p {
+	padding:0 30px;
 }
 .gal-descr li {
 	list-style: none;
@@ -206,7 +210,7 @@ p,span,a,ul {
 	top: 5px;
 }
 .price {
-	font-size: 46px;
+	font-size: 18px;
 	font-weight: bold;
 }
 .gal-img {
@@ -696,3 +700,7 @@ button.mfp-close {
 .logo-white {
 	width: 15%;
 }
+.top-line .phone.mob {
+    display: none;
+}
+

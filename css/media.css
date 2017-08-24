@@ -26,22 +26,22 @@
 	.gal-descr {
 		font-size: 15px;
 	}
-	.price {
-		font-size: 30px;
-	}
 	.scroll .main-nav a {
 		margin: 0 10px;
 	}
 	.benefit span {
 		font-size:16px;
 	}
-	.benefit p {
+	.benefit p,.gal-descr p {
 		font-size:14px;
 	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.price {
+		font-size: 30px;
+	}
 	.benefit img {
 		width: 55px;
 		height:55px;
@@ -69,6 +69,9 @@
 	.scroll .main-nav .logo-white {display: none}
 	.benefit span {
 		font-size:13px;
+	}
+	.gal-descr p {
+		line-height:2.5;
 	}
 }
 
@@ -212,7 +215,7 @@
 	.head-nav {
 		display: flex;
 		justify-content: space-between;
-		padding: 15px 0 95px;
+		padding: 10px 0 95px;
 		align-items: center;
 	}
 	.main-nav a {
