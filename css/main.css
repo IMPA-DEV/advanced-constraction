@@ -55,15 +55,10 @@ p,span,a,ul {
 	font-size: 22px;
 	color: #384259;
 }
-.top-line,.normal{
+.top-line {
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 160px;
-	width: 100%;
-}
-.top-line .scroll {
-	display: flex;
-	justify-content: space-between;
 }
 #first .right {
 	display: flex;
@@ -700,7 +695,4 @@ button.mfp-close {
 }
 .logo-white {
 	width: 15%;
-}
-.top-line .phone.mob {
-	display: none;
 }

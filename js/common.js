@@ -211,12 +211,12 @@ $(function() {
                     }
                     a.style.height = b.getBoundingClientRect().height + 'px';  // если под скользящим элементом есть другие блоки, можно своё значение
                     a.style.padding = '1';
-                    a.style.border = '0';  // если элементу присвоен padding или border
+                    a.style.border = '1';  // если элементу присвоен padding или border
                 }
                 if (a.getBoundingClientRect().top <= 0) { // elem.getBoundingClientRect() возвращает в px координаты элемента относительно верхнего левого угла области просмотра окна браузера
                     b.className = 'scroll';
                 } else {
-                    b.className = 'normal';
+                    b.className = '';
                 }
                 window.addEventListener('resize', function () {
                     a.children[0].style.width = getComputedStyle(a, '').width
