@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="59" viewBox="0 0 250 59">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="250" height="59" fill="#F73859" rx="29.5"/>
+        <text fill="#FFF" font-family="OpenSans-Bold, Open Sans" font-size="18" font-weight="bold">
+            <tspan x="66" y="36">Get a quote</tspan>
+        </text>
+    </g>
+</svg>

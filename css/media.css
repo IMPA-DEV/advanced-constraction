@@ -1,0 +1,487 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.gallery-row a {
+		width: 32%;
+	}
+	.gallery-row a img{
+		width: 100%;
+	}
+	.container {
+		padding: 0 22px;
+	}
+	#discount img,#discount-2 img {
+		width: 60%;
+	}
+	.gal-img,.gal-descr {
+		width: 60%;
+	}
+	.gal-img img {
+		width: 100%;
+	}
+	.gal-descr li {
+		line-height: 2.5;
+	}
+	.gal-descr {
+		font-size: 15px;
+	}
+	.price {
+		font-size: 30px;
+	}
+	.scroll .main-nav a {
+		margin: 0 10px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.benefit img {
+		width: 55px;
+		height:55px;
+	}
+	.benefit p {
+		font-size: 16px;
+	}
+	.benefit span {
+		font-size: 20px;
+	}
+	.benefit:after {
+		top: 0;
+		right: -20px;
+	}
+	.contact-block {
+		padding: 22px 43px;
+		flex-direction: column;
+	}
+	#bathroom .gal-item,.gal-item {
+		flex-direction: column;
+	}
+	.gal-img img,.gal-img,.gal-descr {
+		width: 100%;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	#discount .content .button, #discount-2 .content .button {
+		padding-top: 45px;
+	}
+	.button a {
+		padding: 14px 40px;
+		font-size: 16px;
+	}
+	.scroll .main-nav .logo-white {display: none}
+}
+
+@media only screen and (max-width : 820px) {
+	.scroll .main-nav .button {
+		display: none;
+	}
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	#discount-2 .container {
+		flex-direction: column;
+		left: 0;
+	}
+	.form-wrap,.form-btn-wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	.wrap-input,#form .form-wrap input {
+		width: 100%;
+	}
+	#form .wrap-input input:last-child {
+		margin-bottom: 20px;
+	}
+	#first .right,#nav {
+		display: none;
+	}
+	.right-block p{
+		font-size: 12px;
+	}
+	.footer {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	#form .form-btn-wrap p {
+		text-align: center;
+		margin-left: 0;
+	}
+	.top-line {
+		padding-bottom: 62px;
+	}
+	#first {
+		padding: 30px 0 101px;
+	}
+	.wrap-input textarea {
+		height: 130px;
+	}
+	p,.benefit p {
+		font-size: 16px;
+	}
+	.button a {
+		padding: 11px 25px;
+		font-size: 14px;
+	}
+	.benefits {
+		flex-direction: column;
+	}
+	.benefit:after {
+		content: url("/img/oval-down.svg");
+		position: initial;
+		padding: 10px 0 20px;
+		display: block;
+	}
+	.arrow-box {
+		width: 130px;
+		height: 75px;
+	}
+	.prev-arrow, .next-arrow {
+		width: 35px;
+		height: 36px;
+	}
+	#discount-2 {
+		padding-top: 22px;
+	}
+	#discount h2 {
+		padding-bottom: 10px;
+	}
+	#discount-2 .content .button {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.popup {
+		padding: 80px 0;
+	}
+	.popup h3 {
+		font-size: 42px;
+	}
+	.popup p {
+		font-size: 18px;
+	}
+	.popup-sms img {
+		width: 68px;
+	}
+	.nav-btn {
+		display: block;
+	}
+	.main-nav {
+		display: flex;
+		align-items: left;
+		flex-direction: column;
+		height: initial;
+	}
+	#nav {
+		position: fixed;
+		left: 0;
+		right: 0;
+		align-items: center;
+		top: 0px;
+		background: #384259;
+		z-index: 1;
+		height: 100vh;
+		border: none;
+	}
+	.head-nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px 0 95px;
+	}
+	.main-nav a {
+		font-size: 20px;
+		display: block;
+		margin: 13px 0 13px 60px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	#first h1 {
+		font-size: 48px;
+	}
+	#first p {
+		font-size: 16px;
+	}
+	#application {
+		padding: 22px 18px 32px;
+	}
+	#form h3 {
+		font-size: 16px;
+	}
+	#form p {
+		font-size: 12px;
+		width: 100%;
+	}
+	.footer span{
+		display: block;
+	}
+	.right-block p {
+		text-align: center;
+	}
+	.top-line .left img{
+		width: 150px;
+	}
+	.button a {
+		padding: 15px 37px;
+	}
+	.descr {
+		padding-bottom: 65px;
+	}
+	.container.gal {
+		padding: 0;
+	}
+	.arrow-box {
+		width: 76px;
+		height: 43px;
+	}
+	.arrow-box button {
+		margin: 0 5px;
+	}
+	.prev-arrow, .next-arrow {
+		width: 25px;
+		height: 25px;
+	}
+	.gal-descr {
+		font-size: 13px;
+	}
+	.gal-descr li {
+		padding-bottom: 20px;
+		line-height: 1.46;
+	}
+	.price {
+		font-size: 24px;
+	}
+	#kitchens, #bathroom {
+		padding: 70px 0 0;
+	}
+	#reviews {
+		padding: 70px 0;
+	}
+	#reviews h2, #contact h2 {
+		padding-bottom: 40px;
+	}
+	.review-descr p {
+		font-size: 14px;
+		line-height: 1.43;
+	}
+	.review-title img {
+		height: 57px;
+	}
+	.review {
+		padding: 18px;
+	}
+	.reviews-container {
+		width: 100%;
+	}
+	#contact {
+		padding-bottom: 50px;
+		padding-top: 70px;
+	}
+	#form #bot_but {
+		height: 40px !important;
+		font-size: 14px;
+		width: 142px;
+		line-height: initial;
+		box-shadow:none;
+		margin: 0 0 10px;
+	}
+	#discount .button a,#discount-2 .button a {
+		font-size: 14px;
+		padding: 10px 25px;
+	}
+	#form .form-btn-wrap p {
+		font-size: 11px;
+	}
+	.footer {
+		padding-top: 15px;
+	}
+	.right-block p {
+		font-size: 10px;
+	}
+	.benefits {
+		padding: 50px 0;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	p {
+		font-size: 14px;
+	}
+	.gal-descr li:before {
+		font-size: 20px;
+		top: 3px;
+	}
+	.gal-descr {
+		width: initial;
+	}
+	#first .button a {
+		padding: 15px 37px;
+		font-size: 18px;
+	}
+	#discount {
+		margin: 74px 0 0;
+		padding: 28px 0px 38px;
+	}
+	#discount .container {
+		justify-content: left;
+	}
+	#discount .content {
+		width: 52%;
+		text-align: left;
+	}
+	#discount .content h2 {
+		text-align: left;
+	}
+	#discount .content h2, #discount-2 .content h2 {
+		font-size: 20px;
+	}
+	#discount .content .button, #discount-2 .content .button {
+		padding-top: 20px;
+	}
+	.discount-big {
+		display: none;
+	}
+	.discount-mini {
+		display: block;
+		position: absolute;
+		right: 0px;
+	}
+	#discount-2 .discount-mini {
+		width: 241px;
+	}
+	#discount .discount-mini {
+		width: 170px;
+	}
+	.gallery-row a {
+		pointer-events: none;
+	}
+	#discount img {
+		width: initial;
+	}
+	#discount .container img {
+		padding-top: 30px;
+	}
+	#works {
+		padding-top: 70px;
+	}
+	.review-descr {
+		padding-bottom: 60px;
+	}
+	#reviews .slick-dots {
+		bottom: 40px;
+	}
+	#discount-2 {
+		margin: 0;
+	}
+	#discount-2 .discount-mini {
+		position: initial;
+	}
+	#form {
+		padding: 50px 0;
+	}
+	footer .left-block img {
+		width: 150px;
+	}
+	.popup {
+		padding: 38px 0;
+	}
+	.popup h3 {
+		font-size: 30px;
+	}
+	.popup p {
+		font-size: 14px;
+	}
+	.popup-sms img {
+		width: 58px;
+	}
+	.close {
+		width: 25px;
+		height: 25px;
+		top: 9px;
+		right: 9px;
+	}
+	.desc {
+		padding-left: 10px;
+	}
+	.nav-btn img{
+		width: 36px;
+	}
+	.close-btn {
+		width: 36px;
+		height: 36px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.popup h3 {
+		font-size: 24px;
+	}
+	.popup p {
+		font-size: 13px;
+	}
+	.popup-sms img {
+		width: 38px;
+	}
+	.close {
+		width: 25px;
+		height: 25px;
+		top: 9px;
+		right: 9px;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
