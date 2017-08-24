@@ -55,15 +55,10 @@ p,span,a,ul {
 	font-size: 22px;
 	color: #384259;
 }
-.top-line,.normal{
+.top-line {
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 160px;
-	width: 100%;
-}
-.top-line .scroll {
-	display: flex;
-	justify-content: space-between;
 }
 #first .right {
 	display: flex;
@@ -155,26 +150,30 @@ p,span,a,ul {
 	display: flex;
 	justify-content: space-around;
 	padding: 100px 0;
+	align-items:flex-start;
 }
 .benefit {
 	position: relative;
+	width:25%;
+	padding:0 15px;
 }
 .benefit:after {
 	content: url("../img/line.svg");
 	position: absolute;
-	right: -40px;
-	top: 20px;
+	right: -3px;
+    top: 40px;
 }
 .benefits .benefit:last-child:after {
 	display: none;
 }
 .benefit p{
-	font-size: 20px;
+	font-size: 16px;
 }
 .benefit span {
-	font-size: 26px;
+	font-size: 18px;
 	font-weight: bold;
 	display: block;
+	padding-bottom:5px;
 }
 .gallery {
 	background: #fff;
@@ -696,7 +695,4 @@ button.mfp-close {
 }
 .logo-white {
 	width: 15%;
-}
-.top-line .phone.mob {
-	display: none;
 }
