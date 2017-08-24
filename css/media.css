@@ -137,7 +137,7 @@
 		padding-bottom: 62px;
 	}
 	#first {
-		padding: 30px 0 101px;
+		padding: 10px 0 101px;
 	}
 	.wrap-input textarea {
 		height: 130px;
@@ -204,21 +204,36 @@
 		align-items: center;
 		top: 0px;
 		background: #384259;
-		z-index: 1;
+		z-index: 11;
 		height: 100vh;
 		border: none;
 	}
 	.head-nav {
 		display: flex;
 		justify-content: space-between;
-		padding: 30px 0 95px;
+		padding: 10px 0 95px;
+		align-items: center;
 	}
 	.main-nav a {
 		font-size: 20px;
 		display: block;
 		margin: 13px 0 13px 60px;
 	}
-
+	.top-line .scroll .left {
+		display: none;
+	}
+	.top-line .scroll .phone {
+		display: block;
+	}
+	#nav > .scroll, .top-line .scroll {
+		background-image: linear-gradient(98deg, #ECDFE1, #f6e0d2);
+		border: 0;
+	}
+	.top-line .scroll {
+		align-items: center;
+		padding: 0 22px;
+		width: initial;
+	}
 }
 
 /* Extra Small Devices, Phones */
