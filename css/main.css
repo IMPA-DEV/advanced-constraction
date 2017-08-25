@@ -102,11 +102,10 @@ p,span,a,ul {
 	padding-bottom: 97px;
 }
 #nav{
-	height: 100px;
+	height: 70px;
 }
 .scroll, #nav {
 	background-color: #384259;
-	border: solid 1px #979797;
 	z-index: 10;
 }
 #nav > .scroll,.top-line .scroll{
@@ -123,7 +122,7 @@ p,span,a,ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100px;
+	height: 70px;
 }
 .main-nav a {
 	font-size: 18px;
@@ -680,9 +679,6 @@ button.mfp-close {
 .reviews-container .slick-slide {
 	height: initial;
 }
-.main-nav .logo-white,.main-nav .button,.main-nav .phone {
-	display: none;
-}
 .scroll .main-nav .logo-white,.scroll .main-nav .button,.scroll .main-nav .phone {
 	display: block;
 }
@@ -692,6 +688,8 @@ button.mfp-close {
 }
 .main-nav .button a:hover,.main-nav .mPS2id-highlight {
 	color:#fff;
+}
+.main-nav .logo-white {
 	border: none;
 }
 .main-nav img {
@@ -702,5 +700,8 @@ button.mfp-close {
 }
 .top-line .phone.mob {
     display: none;
+}
+.left,.right {
+	display:none;
 }
 

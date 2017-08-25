@@ -245,6 +245,15 @@
 		width:100%;
 		padding:0;
 	}
+	.left {
+		display:block;
+	}
+	.scroll .main-nav .phone {
+		display:none;
+	}
+	.main-nav .logo-white,.main-nav .button,.main-nav .phone {
+		display: none;
+	}
 }
 
 /* Extra Small Devices, Phones */
