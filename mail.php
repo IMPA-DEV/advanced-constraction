@@ -1,34 +1,34 @@
 <?php
 if (!empty($_POST)) {
-    $to = 'sane490@gmail.com';
-    $subject = 'LEAD FROM ADVANCED CONSTRUCTION PRO';
-    $subject = "=?utf-8?b?". base64_encode($subject) ."?=";
+$to = 'americanqualitycabinets@gmail.com,info@american-construction-pro.com';
+$subject = 'LEAD FROM AMERICAN CONSTRUCTION PRO';
+$subject = "=?utf-8?b?". base64_encode($subject) ."?=";
 
 
 // данные с мыла
-    $name = trim($_POST["name"]);
-    $tel = trim($_POST["telephone"]);
-    $email = trim($_POST["email"]);
-    $msg = trim($_POST["message"]);
+$name = trim($_POST["name"]);
+$phone = trim($_POST["phone"]);
+$text = trim($_POST["text"]);
+$email = trim($_POST["email"]);
 
-    $start = array('utm_source', 'utm_campaign', 'utm_keyword', 'utm_geo', 'utm_matchtype', 'utm_site', 'utm_placement', 'utm_position', 'utm_ad');
-    $finish = array('Source', 'ID Campaign', 'Keyword', 'GEO', 'Matchtype', 'Google', 'Placement', 'AD Position', 'ID AD');
-    $repl = array('+','%20','%2B','%3A','%2F','%3D','%26','%23','%3F','%40','%2C');
-    $replto = array(' ',' ','+',':','/','=','&','#','?','@',',');
-    preg_match_all('/([a-zA-Z_]+?)=([a-zA-Z0-9+:\/.%]+)/', $_SERVER['HTTP_REFERER'], $out);
-    for ($i=0;$i<count($out[0]);$i++)
-    {
-        $advertising .= "<tr><td class=\"bold\">".str_replace($start, $finish, $out[1][$i]).':</td><td>'.str_replace($repl, $replto, $out[2][$i])."</td></tr>";
-    }
+$start = array('utm_source', 'utm_campaign', 'utm_keyword', 'utm_geo', 'utm_matchtype', 'utm_site', 'utm_placement', 'utm_position', 'utm_ad');
+$finish = array('Source', 'ID Campaign', 'Keyword', 'GEO', 'Matchtype', 'Google', 'Placement', 'AD Position', 'ID AD');
+$repl = array('+','%20','%2B','%3A','%2F','%3D','%26','%23','%3F','%40','%2C');
+$replto = array(' ',' ','+',':','/','=','&','#','?','@',',');
+preg_match_all('/([a-zA-Z_]+?)=([a-zA-Z0-9+:\/.%]+)/', $_SERVER['HTTP_REFERER'], $out);
+for ($i=0;$i<count($out[0]);$i++)
+{
+    $advertising .= "<tr><td class=\"bold\">".str_replace($start, $finish, $out[1][$i]).':</td><td>'.str_replace($repl, $replto, $out[2][$i])."</td></tr>";
+}
 
 
 // текст письма
-    $message .= '
+$message .= '
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">  
-  <title>LEAD FROM ADVANCED CONSTRUCTION PRO</title>
+  <title>LEAD FROM AMERICAN CONSTRUCTION PRO</title>
   <style>
    
     body {
@@ -62,7 +62,7 @@ if (!empty($_POST)) {
   </style>
 </head>
 <body>
-<h1>LEAD FROM ADVANCED CONSTRUCTION PRO</h1>
+<h1>LEAD FROM AMERICAN CONSTRUCTION PRO</h1>
 <table>
 <caption>Lead Information:</caption>
 	<tr>
@@ -71,26 +71,26 @@ if (!empty($_POST)) {
 	</tr>
 	<tr>
 		<td class="bold">Phone:</td>
-		<td>'.$tel.'</td>
+		<td>'.$phone.'</td>
 	</tr>
 	<tr>
 		<td class="bold">Email:</td>
         <td>'.$email.'</td>
-	</tr>	
+	</tr>
 	<tr>
 		<td class="bold">Message:</td>
-		<td>'.$msg.'</td>
+        <td>'.$text.'</td>
 	</tr>
 </table>';
 
-    if($advertising!="")
-        $message .= '
+if($advertising!="")
+$message .= '
 <table>
 	<caption>Advertising Information:</caption>	
 	'.$advertising.'
 </table>';
 
-    $message .= '
+$message .= '
 <div class="subinfo">
   <p>Visitor IP adress: '.$_SERVER['REMOTE_ADDR'].'</p>  
   <p>Form submitted from: '. preg_replace('/\?.*/', '', $_SERVER['HTTP_REFERER']).'</p>
@@ -100,15 +100,15 @@ if (!empty($_POST)) {
 ';
 
 
-    $headers = 'Content-type: text/html; charset="utf-8"';
-    $headers .= "MIME-Version: 1.0\r\n";
-    $headers .= "Date: ". date('D, d M Y h:i:s O') ."\r\n";
-    $headers .= "From: BAY AREA (ADV) <admin@adv-construction-services.org>\r\n";
-    if($phone!=''||$email!='') {
-        mail($to, $subject, $message, $headers);
-    }
-    else {return true;
-    }
+$headers = 'Content-type: text/html; charset="utf-8"';
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Date: ". date('D, d M Y h:i:s O') ."\r\n";
+$headers .= "From: AMERICAN CONSTRUCTION PRO <info@american-construction-pro.com>\r\n";
+if($phone!=''||$email!='') {
+	mail($to, $subject, $message, $headers);
+} 
+else {return true;
+}
 
 }
 else {return true;
